@@ -38,11 +38,12 @@ async function getUserData(userName) {
   }
   const repositoriesResponse = await getRepositories(userName);
   const eventsResponse = await getEvents(userName);
+  console.log('Aqui', eventsResponse)
 
-  console.log(eventsResponse)
   user.setInfo(userResponse);
   user.setRepositories(repositoriesResponse);
   user.setEvents(eventsResponse);
+  console.log(user.events)
 
   screen.renderUser(user);
 }

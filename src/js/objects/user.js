@@ -18,8 +18,8 @@ const user = {
     setRepositories(repositories){
         this.repositories = repositories
     },
-    setEvents(events){
-        this.events = events
+    setEvents(eventsNames){
+        this.events = eventsNames
     }
 }
 
